@@ -16,7 +16,7 @@ public class Sound
   public int limitAmplitude(int limit)
   {  
     int counter = 0;
-    for(int i = 0; i < limitAmplitude.length; i++_{
+    for(int i = 0; i < samples.length; i++){
       if(samples[i] > limit){
         samples[i] = limit;
         counter++;
@@ -42,9 +42,9 @@ public class Sound
     while(samples[looper] == 0){
       looper++;
     }
-    public int[] trimmedSample = new int[samples.length - looper];
-    for(int i = 0; i < trimmedSample.length(); i++){
-      trimmedSamples[i] = samples[i+looper];
+    int[] trimmedSample = new int[samples.length - looper];
+    for(int i = 0; i < trimmedSample.length; i++){
+      trimmedSample[i] = samples[i+looper];
     }
     samples = trimmedSample;
   }
