@@ -40,7 +40,7 @@ public class Sound
     while(samples[i] == 0){
       looper++;
     }
-    public int[]trimmedSample = new int[samples.length - looper];
+    public int[] trimmedSample = new int[samples.length - looper];
     for(int i = 0; i < trimmedSample.length(); i++){
       trimmedSamples[i] = samples[i+n];
     }
